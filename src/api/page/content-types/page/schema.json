@@ -1,11 +1,11 @@
 {
   "kind": "collectionType",
-  "collectionName": "articles",
+  "collectionName": "pages",
   "info": {
-    "singularName": "article",
-    "pluralName": "articles",
-    "displayName": "00 _ CSU _ Articles",
-    "description": "Create your blog content"
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "01 _ CSU _ Pages",
+    "description": "Create your page content"
   },
   "options": {
     "draftAndPublish": true
@@ -18,6 +18,10 @@
     "description": {
       "type": "text",
       "maxLength": 80
+    },
+    "introduction": {
+      "type": "text",
+      "maxLength": 500
     },
     "slug": {
       "type": "uid",
@@ -33,13 +37,13 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::author.author",
-      "inversedBy": "articles"
+      "inversedBy": "pages"
     },
     "category": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::category.category",
-      "inversedBy": "articles"
+      "inversedBy": "pages"
     },
     "blocks": {
       "type": "dynamiczone",

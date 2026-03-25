@@ -13,6 +13,14 @@ npm run seed:example  # Populate database with example content
 
 No test or lint commands are configured.
 
+## Node Version
+
+This project requires **Node 22** (Strapi 5.40.0 supports Node 18–22). A `.nvmrc` is included:
+
+```bash
+nvm use   # switches to Node 22
+```
+
 ## Environment Setup
 
 Copy `.env.example` to `.env` and replace placeholder values:
