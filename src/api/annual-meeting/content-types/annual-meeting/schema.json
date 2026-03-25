@@ -15,9 +15,18 @@
     "title": {
       "type": "string"
     },
+    "Date_event": {
+      "type": "date"
+    },
+    "Logo": {
+      "type": "string"
+    },
     "description": {
       "type": "text",
       "maxLength": 80
+    },
+    "City": {
+      "type": "string"
     },
     "slug": {
       "type": "uid",
@@ -27,7 +36,11 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images", "files", "videos"]
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
     },
     "author": {
       "type": "relation",

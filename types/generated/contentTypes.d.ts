@@ -474,10 +474,12 @@ export interface ApiAnnualMeetingAnnualMeeting
   attributes: {
     author: Schema.Attribute.Relation<'manyToOne', 'api::author.author'>;
     category: Schema.Attribute.Relation<'manyToOne', 'api::category.category'>;
+    City: Schema.Attribute.String;
     cover: Schema.Attribute.Media<'images' | 'files' | 'videos'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    Date_event: Schema.Attribute.Date;
     description: Schema.Attribute.Text &
       Schema.Attribute.SetMinMaxLength<{
         maxLength: 80;
@@ -488,6 +490,7 @@ export interface ApiAnnualMeetingAnnualMeeting
       'api::annual-meeting.annual-meeting'
     > &
       Schema.Attribute.Private;
+    Logo: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.UID<'title'>;
     title: Schema.Attribute.String;
