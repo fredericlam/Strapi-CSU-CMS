@@ -1,11 +1,11 @@
 {
   "kind": "collectionType",
-  "collectionName": "articles",
+  "collectionName": "annual_meetings",
   "info": {
-    "singularName": "article",
-    "pluralName": "articles",
-    "displayName": "00 _ CSU _ Articles",
-    "description": "Create your blog content"
+    "singularName": "annual-meeting",
+    "pluralName": "annual-meetings",
+    "displayName": "03 _ IACR _ Annual Meeting",
+    "description": "Create your annual meeting content"
   },
   "options": {
     "draftAndPublish": true
@@ -33,13 +33,13 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::author.author",
-      "inversedBy": "articles"
+      "inversedBy": "annual_meetings"
     },
     "category": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::category.category",
-      "inversedBy": "articles"
+      "inversedBy": "annual_meetings"
     },
     "blocks": {
       "type": "dynamiczone",

@@ -1,5 +1,7 @@
 # 🚀 Getting started with Strapi
 
+> **Node version:** This project runs on **Node 22** (Strapi 5.40.0 supports Node 18–22). A `.nvmrc` is included — run `nvm use` to switch automatically.
+
 Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
 
 ### `develop`

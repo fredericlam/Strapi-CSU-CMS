@@ -1,8 +1,8 @@
 {
-  "name": "my-app-name",
+  "name": "strapi-csu-cms",
   "version": "0.1.0",
   "private": true,
-  "description": "A Strapi application",
+  "description": "The CSU Strapi CMS for GCO, GICR, IACR and CI5",
   "scripts": {
     "build": "strapi build",
     "deploy": "strapi deploy",
@@ -12,10 +12,10 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-cloud": "5.34.0",
-    "@strapi/plugin-users-permissions": "5.34.0",
-    "@strapi/strapi": "5.34.0",
-    "better-sqlite3": "11.3.0",
+    "@strapi/plugin-cloud": "5.40.0",
+    "@strapi/plugin-users-permissions": "5.40.0",
+    "@strapi/strapi": "5.40.0",
+    "better-sqlite3": "11.10.0",
     "fs-extra": "^10.0.0",
     "mime-types": "^2.1.27",
     "react": "^18.0.0",
